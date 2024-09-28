@@ -1,0 +1,126 @@
+:root {
+  --col-gap: 2rem;
+  --col-gap-half: calc(var(--col-gap) / 2);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Verdana", "Tahoma", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+body > div.container {
+  flex-grow: 1;
+  display: flex;
+  column-gap: var(--col-gap);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+  color: #fff;
+}
+body > header {
+  background-color: #57cc99;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-title-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 0.5rem;
+}
+
+body > header > .container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: var(--col-gap);
+}
+
+nav > ul {
+  display: flex;
+  column-gap: var(--col-gap-half);
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+nav > ul > li {
+  background-color: #c7f9cc;
+  transition-duration: 0.25s;
+}
+nav > ul > li > a {
+  display: block;
+  padding: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+nav > ul > li:hover {
+  background-color: #fff;
+}
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+/* --- MAIN --- */
+main {
+  max-width: calc(70% - var(--col-gap-half));
+  padding: 2rem;
+}
+
+/* --- ASIDE --- */
+aside {
+  max-width: 30%;
+  padding: 2rem;
+}
+main img,
+aside img {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+}
+
+/* --- FOOTER --- */
+body > footer {
+  padding: 2rem;
+  background-color: #666;
+  color: #fff;
+}
+body > footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body > footer ul {
+  display: flex;
+  column-gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body > footer ul > li {
+  background-color: #fff;
+}
+body > footer ul a,
+body > footer a > img {
+  display: block;
+}
+body > footer p {
+  margin: 0;
+}
+
+.footer-social-container {
+  display: flex;
+  align-items: center;
+  column-gap: var(--col-gap-half);
+}
