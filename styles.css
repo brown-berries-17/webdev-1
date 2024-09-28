@@ -64,6 +64,9 @@ nav > ul > li > a {
   color: #000;
   text-decoration: none;
 }
+nav > ul > li.active {
+  background-color: #38a3a5;
+}
 
 nav > ul > li:hover {
   background-color: #fff;
